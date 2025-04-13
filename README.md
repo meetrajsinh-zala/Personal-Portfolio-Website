@@ -1,6 +1,6 @@
 # John Doe – Embedded Systems Portfolio 👨‍💻
 
-A clean, modern, and responsive developer portfolio built with React.js, showcasing the skills, projects, and experience of Kunalsinh Gohil – an Embedded Systems Developer.
+A clean, modern, and responsive developer portfolio built with React.js, showcasing the skills, projects, and experience of John Doe – an Embedded Systems Developer.
 
 ## 🚀 Project Overview
 
