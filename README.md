@@ -48,6 +48,8 @@ src/
 
 ## 📸 Preview
 
+[HomePage](https://personal-portfolio-website-henna-seven.vercel.app/)
+
 ## 🔧 Installation & Setup
 
 1. Clone the repository
@@ -85,7 +87,7 @@ This is a personal project and not open for contributions, but feel free to fork
 
 Want to build something smart together?
 
-Reach out via the [Contact Me](#contact) section on the site!
+Reach out via the [Contact Me](https://personal-portfolio-website-henna-seven.vercel.app/#contact) section on the site!
 
 ---
 
