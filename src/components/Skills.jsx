@@ -35,7 +35,7 @@ const skillCategories = [
 const Skills = () => {
   return (
     <div
-      className="flex flex-col items-center gap-16 px-5 sm:px-10 py-16"
+      className="flex flex-col items-center gap-16 px-5 sm:px-10 py-16 select-none"
       id="skills"
     >
       <ScrollFadePop delay={0.1}>
@@ -46,7 +46,7 @@ const Skills = () => {
         {skillCategories.map (({title, delay, skills}, idx) => (
           <ScrollFadePop key={idx} delay={delay}>
             <div className="flex flex-col gap-6">
-              <h2 className="text-[#B2C8BB] text-2xl sm:text-3xl font-JetBrains font-bold">
+              <h2 className=" text-[rgba(17,23,17,0.8)] dark:text-[#B2C8BB] text-2xl sm:text-3xl font-JetBrains font-bold">
                 {title}
               </h2>
               <div className="flex flex-wrap gap-4">

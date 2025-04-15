@@ -12,7 +12,7 @@ const logs = [
   'Executing firmware: Debugging expert @Embedkari',
   'Loading tools: STM32CubeIDE, Keil, Proteus, Altium Designer',
   'Activating advanced modules: Embedded Linux, RTOS',
-  'Fetching credentials: PG Diploma | B.E',
+  'Fetching credentials: PG Diploma - Conestoga | B.E - GTU',
   'Finalizing... Always learning, always building',
 ];
 
@@ -42,13 +42,13 @@ const About = () => {
     <div
       ref={sectionRef}
       id="about"
-      className="px-5 sm:px-10 py-16 sm:py-24 text-amber-50 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16"
+      className="px-5 sm:px-10 py-16 sm:py-24 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 select-none"
     >
       <div className="w-full lg:w-auto flex justify-center lg:justify-end order-1 lg:order-2">
         <img
           src="John Doe.png"
           alt="John Doe"
-          className="w-64 sm:w-72 md:w-80 lg:w-[504px] h-auto object-contain drop-shadow-[0_4px_24px_rgba(178,200,187,0.2)]"
+          className="w-64 sm:w-72 md:w-80 lg:w-[504px] h-auto object-contain dark:drop-shadow-[0_4px_24px_rgba(178,200,187,0.2)] drop-shadow-[0_4px_24px_rgba(17,23,17,0.3)]"
         />
       </div>
 

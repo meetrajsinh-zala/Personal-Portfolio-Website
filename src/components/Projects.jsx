@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import Heading from './Heading';
 import {ArrowLeft, ArrowRight} from 'lucide-react';
 import ProjectCard from './ProjectCard';
@@ -36,6 +36,7 @@ const projects = [
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState (null);
   const containerRef = useRef (null);
+  const [theme, setTheme] = useState (localStorage.getItem ('theme'));
 
   const scroll = direction => {
     const container = containerRef.current;
@@ -48,10 +49,15 @@ const Projects = () => {
     }
   };
 
+  useEffect (() => {
+    const stored = localStorage.getItem ('theme');
+    setTheme (stored === 'dark' ? 'dark' : 'light');
+  }, []);
+
   return (
     <section
       id="project"
-      className="px-5 sm:px-10 py-16 md:py-24 flex flex-col gap-16"
+      className="px-5 sm:px-10 py-16 md:py-24 flex flex-col gap-16 select-none"
     >
       <div className="flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-0">
         <Heading heading="projects" />
@@ -63,9 +69,9 @@ const Projects = () => {
             <button
               key={dir}
               onClick={() => scroll (dir)}
-              className="bg-[#1C2B2B] p-3 rounded-full hover:shadow-[0_0_12px_rgb(109_131_123)] transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
+              className="bg-[#AAB3BA] dark:bg-[#1C2B2B] p-3 rounded-full dark:hover:shadow-[0_0_12px_rgb(109_131_123)] hover:shadow-[0_0_12px_rgba(17,23,17,0.4)] border border-[rgba(17,23,17,0.2)] transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"
             >
-              <Icon color="#B2C8BB" />
+              <Icon className="stroke-[1.5] text-[rgba(17,23,17,0.8)] dark:text-[#B2C8BB]" />
             </button>
           ))}
         </div>

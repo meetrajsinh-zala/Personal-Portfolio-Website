@@ -34,14 +34,14 @@ const ProjectModal = ({isOpen, onClose, project}) => {
           animate={{opacity: 1, y: 0, scale: 1}}
           exit={{opacity: 0, y: 50, scale: 0.95}}
           transition={{duration: 0.3}}
-          className="bg-[#1C2B2B] text-[#B2C8BB] p-8 rounded-2xl max-w-3xl w-full relative overflow-y-auto max-h-[90vh] hide-scrollbar shadow-2xl"
+          className="bg-[rgba(170,179,186,0.7)] dark:bg-[#1C2B2B] text-[rgba(17,28,17,0.8)] dark:text-[#B2C8BB] p-8 rounded-2xl max-w-3xl w-full relative overflow-y-auto max-h-[90vh] hide-scrollbar shadow-2xl"
         >
           <button
             onClick={onClose}
             className="absolute top-4 right-4 hover:scale-110 transition-transform duration-200 cursor-pointer"
             aria-label="Close"
           >
-            <X className="text-[#B2C8BB]" />
+            <X className=" text-[rgba(17,23,17)] dark:text-[#B2C8BB]" />
           </button>
 
           <h2 className="text-3xl font-bold mb-6 border-b border-[#2E4444] pb-2">
@@ -101,7 +101,7 @@ const ProjectModal = ({isOpen, onClose, project}) => {
                   />}
             </div>}
 
-          <p className="mb-6 leading-relaxed text-[#C6DAD3] text-base">
+          <p className="mb-6 leading-relaxed text-[rgba(17,23,17,0.8)] dark:text-[#C6DAD3] text-base">
             {project.Discription}
           </p>
 
@@ -112,7 +112,7 @@ const ProjectModal = ({isOpen, onClose, project}) => {
                 {project.technologies.split (',').map ((tech, idx) => (
                   <span
                     key={idx}
-                    className="bg-[#2E4444] text-[#D1E7DD] px-3 py-1 rounded-full text-sm"
+                    className="bg-[#AAB3BA] dark:bg-[#2E4444] text-[rgba(17,23,17)] dark:text-[#D1E7DD] px-3 py-1 rounded-full text-sm"
                   >
                     {tech.trim ()}
                   </span>
@@ -134,14 +134,13 @@ const ProjectModal = ({isOpen, onClose, project}) => {
               </div>
             </div>}
 
-
           {project.github &&
             <div className="mt-6 flex justify-end">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-[#2E4444] text-[#D1E7DD] rounded-lg hover:bg-[#3A5B5B] transition duration-200"
+                className="flex items-center gap-2 px-4 py-2 bg-[#AAB3BA] dark:bg-[#2E4444] text-[rgba(17,23,17,08)]  dark:text-[#D1E7DD] rounded-lg dark:hover:bg-[#3A5B5B] hover:bg-[rgba(17,23,17,08)] hover:text-[#AAB3BA] transition duration-200"
               >
                 <Github size={18} />
                 View on GitHub

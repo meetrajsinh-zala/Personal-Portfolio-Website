@@ -38,7 +38,7 @@ const contactLinks = [
   },
   {
     icon: <Linkedin size={20} />,
-    link: 'https://www.linkedin.com/in/',
+    link: 'https://www.linkedin.com/in',
   },
   {
     icon: <Github size={20} />,
@@ -48,7 +48,10 @@ const contactLinks = [
 
 const InputField = ({label, type, name, placeholder}) => (
   <div>
-    <label htmlFor={name} className="block mb-1 text-[#B2C8BB]">
+    <label
+      htmlFor={name}
+      className="block mb-1 text-[rgba(17,23,17,0.8)] dark:text-[#B2C8BB]"
+    >
       {label}
     </label>
     <input
@@ -57,14 +60,17 @@ const InputField = ({label, type, name, placeholder}) => (
       name={name}
       placeholder={placeholder}
       required
-      className="w-full bg-[#2a4141] text-[#B2C8BB] p-3 rounded-xl outline-none placeholder-[#A0B4AA]"
+      className="w-full bg-[rgba(170,179,186,0.8)] dark:bg-[#2a4141] text-[rgba(17,23,17)] dark:text-[#B2C8BB] p-3 rounded-xl outline-none placeholder-[rgba(17,23,17,0.3)] dark:placeholder-[#A0B4AA]"
     />
   </div>
 );
 
 const TextAreaField = ({label, name, placeholder}) => (
   <div>
-    <label htmlFor={name} className="block mb-1 text-[#B2C8BB]">
+    <label
+      htmlFor={name}
+      className="block mb-1 text-[rgba(17,23,17,0.8)] dark:text-[#B2C8BB]"
+    >
       {label}
     </label>
     <textarea
@@ -73,7 +79,7 @@ const TextAreaField = ({label, name, placeholder}) => (
       placeholder={placeholder}
       rows="5"
       required
-      className="w-full bg-[#2a4141] text-[#B2C8BB] p-3 rounded-xl outline-none placeholder-[#A0B4AA]"
+      className="w-full bg-[rgba(170,179,186,0.8)] dark:bg-[#2a4141] text-[rgba(17,23,17)] dark:text-[#B2C8BB] p-3 rounded-xl outline-none placeholder-[rgba(17,23,17,0.3)] dark:placeholder-[#A0B4AA]"
     />
   </div>
 );
@@ -110,7 +116,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="px-5 sm:px-10 py-16 sm:py-24 text-[#B2C8BB] font-['JetBrains_Mono']"
+      className="px-5 sm:px-10 py-16 sm:py-24 text-[rgba(17,23,17,0.8)] dark:text-[#B2C8BB] font-['JetBrains_Mono'] select-none"
     >
       <ToastContainer theme="dark" />
 
@@ -132,14 +138,14 @@ const Contact = () => {
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-[#1C2B2B] p-4 rounded-full border border-[#B2C8BB] hover:bg-[#2a4141] transition"
+                      className="dark:bg-[#1C2B2B] p-4 rounded-full border border-[#2A4B49] dark:border-[#B2C8BB] dark:hover:bg-[#2a4141] transition"
                     >
                       {item.icon}
                     </a>
                   : <button
                       key={index}
                       onClick={() => handleContactClick (item.type, item.value)}
-                      className="bg-[#1C2B2B] p-4 rounded-full border border-[#B2C8BB] hover:bg-[#2a4141] transition"
+                      className="dark:bg-[#1C2B2B] p-4 rounded-full border dark:border-[#B2C8BB] dark:hover:bg-[#2a4141] transition"
                     >
                       {item.icon}
                     </button>
@@ -169,7 +175,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="mt-4 bg-[#2a4141] hover:bg-[#3b5656] text-[#B2C8BB] font-semibold py-3 rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="mt-4 bg-[rgba(170,179,186,0.8)] text-[rgba(17,28,17,0.7)] dark:bg-[#2a4141] dark:hover:bg-[#3b5656] dark:text-[#B2C8BB] font-semibold py-3 rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
