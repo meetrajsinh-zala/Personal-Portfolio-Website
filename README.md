@@ -1,6 +1,6 @@
 # John Doe – Embedded Systems Portfolio 👨‍💻
 
-A clean, modern, and responsive developer portfolio built with React.js, showcasing the skills, projects, and experience of Kunalsinh Gohil – an Embedded Systems Developer.
+A clean, modern, and responsive developer portfolio built with React.js, showcasing the skills, projects, and experience of John Doe – an Embedded Systems Developer.
 
 ## 🚀 Project Overview
 
@@ -48,6 +48,8 @@ src/
 
 ## 📸 Preview
 
+[HomePage](https://personal-portfolio-website-henna-seven.vercel.app/)
+
 ## 🔧 Installation & Setup
 
 1. Clone the repository
@@ -75,7 +77,6 @@ You can deploy this portfolio easily using:
 
 - **Vercel**
 - **Netlify**
-- **GitHub Pages**
 
 ## 🤝 Contributing
 
@@ -85,7 +86,7 @@ This is a personal project and not open for contributions, but feel free to fork
 
 Want to build something smart together?
 
-Reach out via the [Contact Me](#contact) section on the site!
+Reach out via the [Contact Me](https://personal-portfolio-website-henna-seven.vercel.app#contact) section on the site!
 
 ---
 
